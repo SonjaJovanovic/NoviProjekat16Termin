@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Naslov" />
+
+    <TextView
+        android:id="@+id/Ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et1"
+        android:text="Ime:"/>
+
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Ime"
+        android:layout_below="@id/tv1"
+        android:text="ET1" />
+
+    <TextView
+        android:id="@+id/Prezime"
+        android:layout_below="@id/Ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et2"
+        android:text="Prezime:"
+        />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Prezime"
+        android:layout_below="@id/et1"
+        android:text="ET2" />
+
+    <View
+        android:id="@+id/pomoc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+    </View>
+
+
+
+    <Button
+        android:id="@+id/dugme2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/pomoc"
+        android:layout_alignParentBottom="true"
+        android:text="DUGME2" />
+
+    <Button
+        android:id="@+id/dugme1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/pomoc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="DUGME1" />
+
+
+
+
+    <EditText
+        android:id="@+id/editTe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_below="@id/Poruka"
+        android:layout_above="@id/dugme1"
+        android:inputType="textPersonName"
+        android:text="ET3" />
+
+    <TextView
+        android:id="@+id/Poruka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Prezime"
+        android:text="Poruka:" />
+
+
+</RelativeLayout>
